@@ -1,1 +1,119 @@
+--------------------------------start code---------------------------------
 
+<?php
+
+eCho "Alamin"; echo "<br>";
+Echo "Alamin"; echo "<br>";
+ecHo "Alamin"; echo "<br>";
+ECHO "Alamin"; echo "<br>";
+
+
+$name ="Alamin";
+echo $name;echo "<br>";
+
+$number1 =102;
+$number2 =101;
+echo $number1;echo "<br>";
+
+echo "my name is ".$name;echo "<br>";
+
+ecHo "my name is ".$name." ". "and i am ".$number1 ." years old"; echo "<br>";
+
+echo "sum of tow number: ". ($number1+$number2) ; echo "<br>";
+echo "<br>";
+echo "<br>";
+
+#scoping
+$age_global = 21;
+function myage()
+{
+	$age_local=20;
+	echo "my local age is: " .$age_local;echo "<br>";
+}
+myage();
+echo "my global age is: ".$age_global;echo "<br>";
+echo "<br>";
+echo "<br>";
+#value increment
+
+function value()
+{
+	$val =5;
+	echo "increment value: ".$val;echo "<br>";
+	$val++;
+}
+value();
+value();
+
+echo "<br>";
+#static increments
+function value1()
+{
+	static $vale = 5;
+	echo $vale; echo "<br>";
+	$vale++;
+}
+value1();
+value1();
+value1();
+
+
+#variable
+
+//string
+$name_var = "alamin sheikh";
+var_dump($name_var); echo "<br>";
+
+//integer
+$int_var = 1001;
+var_dump($int_var);echo "<br>";
+
+//flaot
+$float_var=10.2;
+var_dump($float_var);echo "<br>";
+
+//array
+$student = array("Alamin","sheikh");
+echo $student[0]; echo "<br>";
+var_dump($student); echo "<br>";
+
+?>
+
+
+---------------------------end code-------------------------------------
+
+
+------------------------start output-----------------------------
+
+Alamin
+Alamin
+Alamin
+Alamin
+Alamin
+102
+my name is Alamin
+my name is Alamin and i am 102 years old
+sum of tow number: 203
+
+
+my local age is: 20
+my global age is: 21
+
+
+increment value: 5
+increment value: 5
+
+5
+6
+7
+string(13) "alamin sheikh"
+int(1001)
+float(10.2)
+Alamin
+array(2) { [0]=> string(6) "Alamin" [1]=> string(6) "sheikh" }
+
+
+-----------------------------end output-------------------------
+
+
+Happy coding___
